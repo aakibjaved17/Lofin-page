@@ -1,0 +1,80 @@
+ body {
+    margin: 0;
+    overflow: hidden; 
+}
+
+.animated-background {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #2196F3, #E91E63); 
+    background-size: 400% 400%; 
+    animation: animatedBackground 5s linear infinite; 
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+ .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-color: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    text-align: center;
+}
+form .text-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin:20px ;
+}
+
+.text-field input {
+    width: 100%;
+    height: 3 0px;
+    margin-left:15px;
+    border: none;
+    outline: none;
+}
+
+.txt-label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    transform: .5s;
+}
+
+
+ button{
+    width: 100%;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #4cc5f6, #5f5ff7);
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+i{
+   position: relative;
+   color: #888; 
+   transform: translateY(120%); 
+   margin-right: 260px
+} 
+
